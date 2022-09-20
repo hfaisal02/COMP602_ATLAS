@@ -2,17 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : MonoBehaviour
+public class PlayerIdleState : PlayerState
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerIdleState(Player player, PlayerStateMachine stateMachine) : base(player, stateMachine){}
+
+    public override void Enter()
     {
-        
+        base.Enter();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Exit()
     {
-        
+        base.Exit();
+    }
+
+    public override void LogicUpdate()
+    {
+        base.LogicUpdate();
+
+        Debug.Log("idle");
+
+        if(moveDir != Vector2.zero)
+        {
+            stateMachine.ChangeState(player.moveState);
+        }
+    }
+
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
     }
 }
