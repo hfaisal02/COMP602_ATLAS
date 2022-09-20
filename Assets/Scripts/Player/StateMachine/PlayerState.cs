@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerState
@@ -25,7 +23,6 @@ public class PlayerState
     public virtual void LogicUpdate()
     {
         moveDir = player.inputHandler.rawMovementInput.normalized; //get a vector value between 0 and 1 that represents the direction to move
-        Debug.Log(moveDir);
     }
 
     public virtual void PhysicsUpdate(){}

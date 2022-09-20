@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMoveState : PlayerState
@@ -19,8 +17,9 @@ public class PlayerMoveState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        Debug.Log("move state");
 
-        Debug.Log("move");
+        player.SetMovementVelocity(moveDir * PlayerData.movementSpeed);
 
         if(moveDir == Vector2.zero)
         {
@@ -30,8 +29,6 @@ public class PlayerMoveState : PlayerState
 
     public override void PhysicsUpdate()
     {
-        base.PhysicsUpdate();        
-        
-        player.SetMovementVelocity(moveDir * PlayerData.movementSpeed);
+        base.PhysicsUpdate();
     }
 }

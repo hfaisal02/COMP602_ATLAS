@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerIdleState : PlayerState
@@ -19,8 +17,7 @@ public class PlayerIdleState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
-        Debug.Log("idle");
+        Debug.Log("idle state");
 
         if(moveDir != Vector2.zero)
         {

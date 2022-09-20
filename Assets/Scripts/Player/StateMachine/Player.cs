@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -52,5 +50,12 @@ public class Player : MonoBehaviour
     {
         rb.velocity = velocity;
         currentVelocity = velocity;
+    }
+
+    public void SetDashVelocity(float speed, Vector2 direction)
+    {
+        Vector2 temp = speed * direction;
+        rb.velocity = temp;
+        currentVelocity = temp;
     }
 }
