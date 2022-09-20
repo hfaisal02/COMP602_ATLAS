@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author: Toryn
 public class GameTime : MonoBehaviour
 {
     private float playTime = 0.0f;
