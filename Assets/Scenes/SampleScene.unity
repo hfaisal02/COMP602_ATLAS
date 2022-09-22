@@ -1338,6 +1338,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5c187d2a-b989-45aa-a99e-b380f322c1c5
     m_ActionName: Gameplay/Pause[/Keyboard/escape,/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1092522349}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnMapInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4b060761-b1a4-40bb-a09d-64ae8f8f6166
+    m_ActionName: Gameplay/Map[/Keyboard/m,/XInputControllerWindows/select]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

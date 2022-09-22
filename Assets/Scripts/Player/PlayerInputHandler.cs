@@ -27,4 +27,10 @@ public class PlayerInputHandler : MonoBehaviour
         gameManager.GetComponent<UIPauseMenu>().Pause();
         Debug.Log("pause button pressed");
     }
+
+    public void OnMapInput(InputAction.CallbackContext context)
+    {
+        gameManager.GetComponent<UIMapMenu>().Open();
+        Debug.Log("pause button pressed");
+    }
 }
