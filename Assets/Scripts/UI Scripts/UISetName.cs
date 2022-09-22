@@ -22,6 +22,6 @@ public class UISetName : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        object_text = nameDisplay.text;
+        //object_text = nameDisplay.text;
     }
 }

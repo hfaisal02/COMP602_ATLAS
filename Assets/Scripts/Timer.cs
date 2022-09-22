@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 //Author: Toryn
 public class Timer : MonoBehaviour
@@ -12,8 +11,6 @@ public class Timer : MonoBehaviour
 
     //Test Variable
     private bool gameRunningTest = true;
-
-    public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update
     void Start()
@@ -38,11 +35,9 @@ public class Timer : MonoBehaviour
         {
             StopTimer();
         }
-
-        timerText.text = TimePlayed();
     }
 
-    string TimePlayed()
+    public string TimePlayed()
     {
         int seconds = (int)(playTime % 60);
         int minutes = (int)(playTime / 60) % 60;
@@ -66,6 +61,6 @@ public class Timer : MonoBehaviour
     {
         runTimer = false;
         ////Test code
-        Debug.Log("Timer is stopped..");
+        //Debug.Log("Timer is stopped..");
     }
 }
