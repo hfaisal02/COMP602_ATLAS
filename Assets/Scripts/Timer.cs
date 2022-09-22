@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 //Author: Toryn
-public class GameTime : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     private float playTime = 0.0f;
     private bool runTimer = false;
 
     //Test Variable
     private bool gameRunningTest = true;
+
+    public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +38,11 @@ public class GameTime : MonoBehaviour
         {
             StopTimer();
         }
+
+        timerText.text = TimePlayed();
     }
 
-    void TimePlayed()
+    string TimePlayed()
     {
         int seconds = (int)(playTime % 60);
         int minutes = (int)(playTime / 60) % 60;
@@ -44,7 +50,9 @@ public class GameTime : MonoBehaviour
 
         string displayTime = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
 
-        Debug.Log(displayTime);
+        return displayTime;
+
+        //Debug.Log(displayTime);
     }
 
     void TimerStart()
