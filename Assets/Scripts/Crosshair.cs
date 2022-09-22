@@ -59,9 +59,10 @@ public class Crosshair : MonoBehaviour
         }
         else if(playerInput.currentControlScheme == "Keyboard")
         {
-            sprite.enabled = true;       
+            sprite.enabled = true;
+            opacity.a = 1f;
+            GetComponent<SpriteRenderer>().color = opacity;        
         }   
-        opacity.a = 1f;
-        GetComponent<SpriteRenderer>().color = opacity; 
+        
     }
 }
