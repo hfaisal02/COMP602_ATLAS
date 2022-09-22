@@ -22,11 +22,11 @@ public class Crosshair : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         opacity = sprite.color;
         Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        Cursor.visible = false;
         mousePos = playerInput.actions["Aim"].ReadValue<Vector2>();        
 
         if(playerInput.currentControlScheme == "Gamepad")
