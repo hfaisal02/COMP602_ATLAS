@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public PlayerStateMachine stateMachine {get; private set;}
     public PlayerIdleState idleState {get; private set;}
     public PlayerMoveState moveState {get; private set;}
+    public PlayerDashState dashState {get; private set;}
     #endregion
 
     #region Component Variables
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
 
         idleState = new PlayerIdleState(this, stateMachine);
         moveState = new PlayerMoveState(this, stateMachine);
+        dashState = new PlayerDashState(this, stateMachine);
     }
 
     void Start()

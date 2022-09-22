@@ -21,7 +21,6 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        //pauseActive = true;
         if(gameCanvas.activeSelf)
         {
             gameCanvas.SetActive(false);

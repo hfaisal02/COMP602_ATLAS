@@ -17,7 +17,7 @@ public class PlayerIdleState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        Debug.Log("idle state");
+        //Debug.Log("Idle State");
 
         if(moveDir != Vector2.zero)
         {
