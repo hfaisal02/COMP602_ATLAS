@@ -11,10 +11,12 @@ public class UIMapMenu : MonoBehaviour
         if (mapObject.activeSelf)
         {
             mapObject.SetActive(false);
+            PlayerData.menuActive = false;
         }
-        else
+        else if(!PlayerData.menuActive)
         {
             mapObject.SetActive(true);
+            PlayerData.menuActive = true;
         }
     }
 }
