@@ -344,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &148577334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3a95cf6fa72684a9822a87d3786543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 1435637182}
 --- !u!114 &213187004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,9 +650,10 @@ GameObject:
   m_Component:
   - component: {fileID: 649928274}
   - component: {fileID: 649928273}
+  - component: {fileID: 649928275}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,12 +665,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649928272}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e3a95cf6fa72684a9822a87d3786543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
 --- !u!4 &649928274
 Transform:
   m_ObjectHideFlags: 0
@@ -686,6 +685,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649928275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649928272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071b522d3d703744081c44f9362c9e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCanvas: {fileID: 148577333}
+  timerText: {fileID: 59847852}
 --- !u!1 &835228225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1144,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9437ac2a-81da-406f-91c7-a967d5194dc9
     m_ActionName: Gameplay/Interact[/Keyboard/e,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1092522349}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnPauseInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5c187d2a-b989-45aa-a99e-b380f322c1c5
+    m_ActionName: Gameplay/Pause[/Keyboard/escape,/XInputControllerWindows/start]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

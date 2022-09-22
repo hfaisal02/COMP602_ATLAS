@@ -3,7 +3,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+    private GameObject gameManager;
     public Vector2 rawMovementInput {get; private set;}
+
+    public void Start()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+    }
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
@@ -14,5 +20,11 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnDashInput(InputAction.CallbackContext context)
     {
         Debug.Log("dash input");
+    }
+
+    public void OnPauseInput(InputAction.CallbackContext context)
+    {
+        gameManager.GetComponent<UIPauseMenu>().Pause();
+        Debug.Log("pause button pressed");
     }
 }
