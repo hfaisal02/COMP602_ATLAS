@@ -8,6 +8,13 @@ public class UIMapMenu : MonoBehaviour
 
     public void Open()
     {
-        
+        if (mapObject.activeSelf)
+        {
+            mapObject.SetActive(false);
+        }
+        else
+        {
+            mapObject.SetActive(true);
+        }
     }
 }
