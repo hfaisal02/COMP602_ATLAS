@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class UISetName : MonoBehaviour
 {
-    public TMP_InputField object_text;
+    public TMP_InputField nameInputField;
+    public GameObject sceneEssentials;
     
     public void SetName()
     {
-        PlayerData.playerName = object_text.text;
-        Debug.Log(PlayerData.playerName);
+        PlayerData.playerName = nameInputField.text;
+        sceneEssentials.SetActive(true);
         SceneManager.LoadScene("TownTest");
     }
 }

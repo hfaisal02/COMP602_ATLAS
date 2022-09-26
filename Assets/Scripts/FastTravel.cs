@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class FastTravel : MonoBehaviour
 {
     public Transform newLocation;
+    public Transform spawnPosition;
     public bool sceneChange;
     public string sceneName;
 

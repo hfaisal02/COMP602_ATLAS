@@ -14,8 +14,11 @@ public class WeaponRotation : MonoBehaviour
     }
     void Update()
     {
-        GetMouseInput();
-        WeaponAnimation();
+        if(!PlayerData.menuActive)
+        {
+            GetMouseInput();
+            WeaponAnimation();
+        }
     }
 
     void GetMouseInput()
