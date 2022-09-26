@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -21,18 +19,19 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        //pauseActive = true;
         if(gameCanvas.activeSelf)
         {
             gameCanvas.SetActive(false);
+            PlayerData.menuActive = false;
 
             Time.timeScale = 1.0f;
         }
-        else
+        else if(!PlayerData.menuActive)
         {
             gameCanvas.SetActive(true);
+            PlayerData.menuActive = true;
 
-            Time.timeScale = 0.0f;
+            Time.timeScale = 0.0f;            
         }
     }
 }

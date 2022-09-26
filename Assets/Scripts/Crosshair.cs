@@ -22,11 +22,11 @@ public class Crosshair : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         opacity = sprite.color;
         Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        Cursor.visible = false;
         mousePos = playerInput.actions["Aim"].ReadValue<Vector2>();        
 
         if(playerInput.currentControlScheme == "Gamepad")
@@ -59,9 +59,10 @@ public class Crosshair : MonoBehaviour
         }
         else if(playerInput.currentControlScheme == "Keyboard")
         {
-            sprite.enabled = true;       
+            sprite.enabled = true;
+            opacity.a = 1f;
+            GetComponent<SpriteRenderer>().color = opacity;        
         }   
-        opacity.a = 1f;
-        GetComponent<SpriteRenderer>().color = opacity; 
+        
     }
 }

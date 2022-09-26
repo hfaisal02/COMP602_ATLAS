@@ -17,7 +17,7 @@ public class PlayerMoveState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        Debug.Log("move state");
+        //Debug.Log("Move State");
 
         player.SetMovementVelocity(moveDir * PlayerData.movementSpeed);
 
