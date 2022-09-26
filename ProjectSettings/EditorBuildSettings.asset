@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerNameTest.unity
     guid: 58284a6e13b26ff46bf2fa235102ee2c
   - enabled: 1
-    path: Assets/Scenes/HouseTest.unity
+    path: Assets/Scenes/TownTest.unity
     guid: f0fcf652f9e403444be8f1aa7bfab08e
   - enabled: 1
     path: Assets/Scenes/RoomTest.unity
