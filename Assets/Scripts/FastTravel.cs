@@ -4,13 +4,21 @@ using UnityEngine.SceneManagement;
 public class FastTravel : MonoBehaviour
 {
     public Transform newLocation;
+    public bool sceneChange;
+    public string sceneName;
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player")
         {
-            collider.gameObject.transform.position = newLocation.position;
-            //SceneManager.LoadScene("test"); //if the entire scene has to be changed on collision instead
+            if(sceneChange)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+            else
+            {
+                collider.gameObject.transform.position = newLocation.position;
+            }
         }
         else
         {
