@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UIPauseMenu : MonoBehaviour
@@ -33,5 +34,15 @@ public class UIPauseMenu : MonoBehaviour
 
             Time.timeScale = 0.0f;            
         }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("NameSetTest");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
