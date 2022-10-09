@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField]
+    private float levelTimer;
+    private bool startTimer;    
     public float survivalTimer;
     public GameObject teleporter;
     public Transform[] teleporterLocations;
@@ -12,19 +15,21 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         active = true;
+        startTimer = true;
     }
 
     void Update()
-    {
-        if(PlayerData.playTime >= survivalTimer && active)
+    {        
+        if(startTimer)
+        {
+            levelTimer += Time.deltaTime;
+        }
+
+        if(levelTimer >= survivalTimer && active)
         {
             Debug.Log("The Player has survived for the required time.");
             SpawnTeleporter();
-            active = false;
         }
-        
-        int rand = Random.Range(0, teleporterLocations.Length);
-        Debug.Log("Spawning Teleporter "+rand);
     }
 
     void SpawnTeleporter()
@@ -32,5 +37,7 @@ public class LevelManager : MonoBehaviour
         int rand = Random.Range(0, teleporterLocations.Length);
         Instantiate(teleporter, teleporterLocations[rand]);
         Debug.Log("Spawning Teleporter "+rand);
+        
+        active = false;
     }
 }

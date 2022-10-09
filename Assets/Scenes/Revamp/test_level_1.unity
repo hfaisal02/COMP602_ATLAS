@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582c0325aefbe634398ee5d1c698d728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTimer: 0
   survivalTimer: 5
   teleporter: {fileID: 6530228483006825368, guid: c2a3dc7e79cbb8c4083c850dab930c16, type: 3}
   teleporterLocations:
@@ -274,6 +275,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14149241765142559, guid: df66b0f998844c84cac1fa66f273f884, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1843844999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493589346384778299, guid: df66b0f998844c84cac1fa66f273f884, type: 3}
+      propertyPath: m_text
+      value: NameText
+      objectReference: {fileID: 0}
     - target: {fileID: 5960383855259802237, guid: df66b0f998844c84cac1fa66f273f884, type: 3}
       propertyPath: m_RootOrder
       value: 0

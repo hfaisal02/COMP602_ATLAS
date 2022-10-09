@@ -7,6 +7,7 @@ public class PlayerInputHandler : MonoBehaviour
     private Player player;
     public Vector2 rawMovementInput {get; private set;}
     
+    [HideInInspector]
     public bool dashInput;
     private float inputHoldTime = 0.2f;
     private float dashStartTime;
