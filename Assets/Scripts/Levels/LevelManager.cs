@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField]
     private float levelTimer;
     private bool startTimer;    
     public float survivalTimer;
+    public string nextLevel;
     public GameObject teleporter;
     public Transform[] teleporterLocations;
     private bool active;
@@ -35,9 +35,8 @@ public class LevelManager : MonoBehaviour
     void SpawnTeleporter()
     {
         int rand = Random.Range(0, teleporterLocations.Length);
-        Instantiate(teleporter, teleporterLocations[rand]);
-        Debug.Log("Spawning Teleporter "+rand);
-        
+        Teleporter obj = Instantiate(teleporter, teleporterLocations[rand]).GetComponent<Teleporter>();
+        obj.sceneName = nextLevel;        
         active = false;
     }
 }

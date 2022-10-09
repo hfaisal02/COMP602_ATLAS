@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582c0325aefbe634398ee5d1c698d728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTimer: 0
   survivalTimer: 5
+  nextLevel: test_level_2
   teleporter: {fileID: 6530228483006825368, guid: c2a3dc7e79cbb8c4083c850dab930c16, type: 3}
   teleporterLocations:
   - {fileID: 1874352057}

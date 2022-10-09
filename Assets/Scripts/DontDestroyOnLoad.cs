@@ -11,7 +11,6 @@ public class DontDestroyOnLoad : MonoBehaviour
         if(playerObjs.Length > 1)
         {
             Destroy(this.gameObject);
-            Debug.Log("hello??");
         }
 
         DontDestroyOnLoad(this.gameObject);
