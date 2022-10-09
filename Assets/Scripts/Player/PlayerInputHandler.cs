@@ -12,6 +12,8 @@ public class PlayerInputHandler : MonoBehaviour
     private float inputHoldTime = 0.2f;
     private float dashStartTime;
 
+    public bool interactInput {get; private set;}
+
     public void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -52,5 +54,17 @@ public class PlayerInputHandler : MonoBehaviour
     {
         gameManager.GetComponent<UIMapMenu>().Open();
         //Debug.Log("map button pressed");
+    }
+
+    public void OnInteractInput(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            interactInput = true;
+        }
+        else if(context.canceled)
+        {
+            interactInput = false;
+        }
     }
 }
