@@ -11,4 +11,5 @@ public static class PlayerData
 
     [HideInInspector]
     public static bool menuActive;
+    public static float playTime;
 }

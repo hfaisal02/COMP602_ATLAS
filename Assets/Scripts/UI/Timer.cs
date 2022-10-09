@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +25,7 @@ public class Timer : MonoBehaviour
 
             if(runTimer)
             {
-                playTime += Time.deltaTime;
+                PlayerData.playTime += Time.deltaTime;
                 TimePlayed();
             }
         }
@@ -39,9 +37,9 @@ public class Timer : MonoBehaviour
 
     public string TimePlayed()
     {
-        int seconds = (int)(playTime % 60);
-        int minutes = (int)(playTime / 60) % 60;
-        int hours = (int)(playTime / 3600) % 24;
+        int seconds = (int)(PlayerData.playTime % 60);
+        int minutes = (int)(PlayerData.playTime / 60) % 60;
+        int hours = (int)(PlayerData.playTime / 3600) % 24;
 
         string displayTime = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
 
