@@ -1,16 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Teleporter : MonoBehaviour
+public class Teleporter : Interactable
 {
-    public void OnTriggerEnter2D(Collider2D collider)
+    public string sceneName;
+
+    public override void Interact()
     {
-        if (collider.tag == "Player")
-        {
-            Debug.Log("The Player has collided with the teleporter.");
-        }
-        else
-        {
-            Debug.Log("Another object has collided with the teleporter.");
-        }
+        base.Interact();
+        SceneManager.LoadScene(sceneName);
     }
 }
