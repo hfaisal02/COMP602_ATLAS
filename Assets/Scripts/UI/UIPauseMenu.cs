@@ -38,7 +38,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("NameSetTest");
+        SceneManager.LoadScene("PlayerNameTest");
     }
 
     public void Quit()
