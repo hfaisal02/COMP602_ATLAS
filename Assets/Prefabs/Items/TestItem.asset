@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fc42250fdd2ff449aa632a165d5bb92, type: 3}
-  m_Name: HealthPotion
+  m_Name: TestItem
   m_EditorClassIdentifier: 
-  itemName: Health Potion
-  itemDescription: Restores 5 [Health] when consumed.
-  price: 5
-  icon: {fileID: 21300000, guid: ab005ef44dee32d44b8895413f0644fb, type: 3}
+  itemName: Test Item
+  itemDescription: 
+  price: 1
+  icon: {fileID: 21300000, guid: 3e28e867602df8a4bb6d56db04776576, type: 3}

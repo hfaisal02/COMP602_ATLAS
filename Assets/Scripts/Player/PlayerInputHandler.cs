@@ -84,4 +84,9 @@ public class PlayerInputHandler : MonoBehaviour
             //InteractInput = false;
         }
     }
+
+    public void OnInventoryInput(InputAction.CallbackContext context)
+    {
+        //gameManager.GetComponent<UIMenuHandler>().OpenMenu();
+    }
 }

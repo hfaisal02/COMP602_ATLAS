@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class UIMapMenu : MonoBehaviour
 {
-    public GameObject mapObject;
+    public GameObject canvas;
 
     public void Open()
     {
-        if (mapObject.activeSelf)
+        if (canvas.activeSelf)
         {
-            mapObject.SetActive(false);
+            canvas.SetActive(false);
             PlayerData.menuActive = false;
         }
         else if(!PlayerData.menuActive)
         {
-            mapObject.SetActive(true);
+            canvas.SetActive(true);
             PlayerData.menuActive = true;
         }
     }
