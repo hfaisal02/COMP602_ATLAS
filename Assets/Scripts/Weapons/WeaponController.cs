@@ -8,8 +8,8 @@ public class WeaponController : MonoBehaviour
 
     private PlayerInput playerInput;
 
-    Vector3 mousePosition, mouseVector, aimVector;
-    float cooldown, startCooldown;
+    private Vector3 mousePosition, mouseVector, aimVector;
+    private float cooldown, startCooldown;
     
     void Start()
     {
@@ -57,8 +57,10 @@ public class WeaponController : MonoBehaviour
         {
             if (InputManager.shootInput)
             {
+                Vector3 deviationAmount = new Vector3(Random.Range(-weapon.deviation, weapon.deviation), Random.Range(-weapon.deviation, weapon.deviation), 0);
+
                 var proj = Instantiate(weapon.bulletPrefab, tip.position, aim.rotation).GetComponent<Projectile>();
-                proj.Setup(mouseVector, weapon.damage);
+                proj.Setup(mouseVector + deviationAmount, weapon.damage);
                 cooldown = startCooldown;
             }
         }

@@ -1,21 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 //Author: Toryn
 public class Timer : MonoBehaviour
 {
     private bool runTimer = false;
-
-    //Test Variable
     private bool gameRunningTest = true;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(gameRunningTest == true)
@@ -43,21 +33,15 @@ public class Timer : MonoBehaviour
         string displayTime = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
 
         return displayTime;
-
-        //Debug.Log(displayTime);
     }
 
     void TimerStart()
     {
         runTimer = true;
-        //Test code
-        //Debug.Log("Timer is running...");
     }
 
     void StopTimer()
     {
         runTimer = false;
-        ////Test code
-        //Debug.Log("Timer is stopped..");
     }
 }

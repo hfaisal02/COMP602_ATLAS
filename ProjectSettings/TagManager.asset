@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameManager
   - Obstacle
+  - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -45,6 +47,9 @@ TagManager:
     locked: 0
   - name: Object
     uniqueID: 1029946965
+    locked: 0
+  - name: Projectile
+    uniqueID: 2682722213
     locked: 0
   - name: Player
     uniqueID: 3485152831
