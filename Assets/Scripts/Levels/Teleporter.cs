@@ -1,13 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Teleporter : Interactable
+public class Teleporter : MonoBehaviour, Interactable
 {
     public string sceneName;
 
-    public override void Interact()
+    public void Interact()
     {
-        base.Interact();
         SceneManager.LoadScene(sceneName);
     }
 }

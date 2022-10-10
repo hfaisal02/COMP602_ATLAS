@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public interface Interactable
 {
-    public float radius;
+    public void Interact();
+
+    /*public float radius;
     private bool inRange;
 
     private GameObject player;  
@@ -16,12 +18,9 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if(inRange)
+        if(inRange && InputManager.interactInput)
         {
-            if(inputHandler.InteractInput)
-            {
-                Interact();
-            }
+            Interact();
         }
     }
 
@@ -51,4 +50,5 @@ public class Interactable : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, radius);        
     }
+    */
 }

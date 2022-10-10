@@ -75,11 +75,13 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if(context.started)
         {
-            InteractInput = true;
+            InputManager.interactInput = true;
+            //InteractInput = true;
         }
         else if(context.canceled)
         {
-            InteractInput = false;
+            InputManager.interactInput = false;
+            //InteractInput = false;
         }
     }
 }
