@@ -4,7 +4,6 @@ using UnityEngine.UI;
 //Author: Toryn
 public class Timer : MonoBehaviour
 {
-    private float playTime = 0.0f;
     private bool runTimer = false;
 
     //Test Variable

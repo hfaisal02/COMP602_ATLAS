@@ -16,7 +16,7 @@ public class PlayerDashState : PlayerState
         canDash = false;
         dashComplete = false;
         player.inputHandler.dashInput = false;
-        dashDir = player.inputHandler.rawMovementInput.normalized;
+        dashDir = player.inputHandler.RawMovementInput.normalized;
     }
 
     public override void Exit()

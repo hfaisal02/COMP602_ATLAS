@@ -5,8 +5,9 @@ public class WeaponRotation : MonoBehaviour
 {
     private Vector3 mousePosition;
     private Vector3 mouseVector;
-    private PlayerInput playerInput;
     public Transform aim;
+
+    private PlayerInput playerInput;
 
     void Start()
     {

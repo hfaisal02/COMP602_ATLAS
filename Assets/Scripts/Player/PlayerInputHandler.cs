@@ -5,14 +5,15 @@ public class PlayerInputHandler : MonoBehaviour
 {
     private GameObject gameManager;
     private Player player;
-    public Vector2 rawMovementInput {get; private set;}
+    public Vector2 RawMovementInput {get; private set;}
     
     [HideInInspector]
     public bool dashInput;
     private float inputHoldTime = 0.2f;
     private float dashStartTime;
 
-    public bool interactInput {get; private set;}
+    public bool ShootInput { get; private set; }
+    public bool InteractInput { get; private set; }
 
     public void Start()
     {
@@ -22,7 +23,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        rawMovementInput = context.ReadValue<Vector2>();
+        RawMovementInput = context.ReadValue<Vector2>();
         //Debug.Log("move input");
     }
 
@@ -34,6 +35,20 @@ public class PlayerInputHandler : MonoBehaviour
             dashStartTime = Time.time;
         }
         //Debug.Log("dash input");
+    }
+
+    public void OnShootInput(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            //ShootInput = true;
+            InputManager.shootInput = true;
+        }
+        else if(context.canceled)
+        {
+            //ShootInput = false;
+            InputManager.shootInput = false;
+        }
     }
 
     public void CheckDashHoldTime()
@@ -60,11 +75,11 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if(context.started)
         {
-            interactInput = true;
+            InteractInput = true;
         }
         else if(context.canceled)
         {
-            interactInput = false;
+            InteractInput = false;
         }
     }
 }

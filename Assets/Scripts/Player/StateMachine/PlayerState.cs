@@ -23,7 +23,7 @@ public class PlayerState
 
     public virtual void LogicUpdate()
     {
-        moveDir = player.inputHandler.rawMovementInput.normalized; //get a vector value between 0 and 1 that represents the direction to move
+        moveDir = player.inputHandler.RawMovementInput.normalized; //get a vector value between 0 and 1 that represents the direction to move
 
         player.inputHandler.CheckDashHoldTime();
 

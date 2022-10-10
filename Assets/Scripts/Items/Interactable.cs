@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour
     {
         if(inRange)
         {
-            if(inputHandler.interactInput)
+            if(inputHandler.InteractInput)
             {
                 Interact();
             }
