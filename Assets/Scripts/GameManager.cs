@@ -26,14 +26,22 @@ public class GameManager : MonoBehaviour
     public int maxHealth;
 
     public int currency;
+    [HideInInspector]
+    public int currentStage;
+
+    [Header("Stages")]
+    //[HideInInspector]
+    public List<string> stagesList = new List<string>();
 
     private void Start()
     {
         health = maxHealth;
+        currentStage = 0;
     }
 
     private void OnEnable()
     {
+        StageHandler.OnStageChanged += OnStageChanged;
         Currency.OnCurrencyCollected += AddCurrency;
     }
 
@@ -46,5 +54,11 @@ public class GameManager : MonoBehaviour
     {
         currency += amount;
         Debug.Log(currency);
+    }
+
+    void OnStageChanged()
+    {
+        currentStage += 1;
+        Debug.Log("GM" + currentStage);
     }
 }

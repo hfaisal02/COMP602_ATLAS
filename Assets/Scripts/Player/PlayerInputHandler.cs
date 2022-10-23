@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler : MonoBehaviour
 {
     private GameObject gameManager;
+    private GameObject uiManager;
     private Player player;
     public Vector2 RawMovementInput {get; private set;}
     
@@ -18,6 +19,11 @@ public class PlayerInputHandler : MonoBehaviour
     public void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        uiManager = GameObject.FindGameObjectWithTag("UIManager");
+        if(uiManager == null)
+        {
+            Debug.Log("ui manager null");
+        }
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
@@ -61,13 +67,13 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPauseInput(InputAction.CallbackContext context)
     {
-        gameManager.GetComponent<UIPauseMenu>().Pause();
+        uiManager.GetComponent<UIPauseMenu>().Pause();
         //Debug.Log("pause button pressed");
     }
 
     public void OnMapInput(InputAction.CallbackContext context)
     {
-        gameManager.GetComponent<UIMapMenu>().Open();
+        uiManager.GetComponent<UIMapMenu>().Open();
         //Debug.Log("map button pressed");
     }
 

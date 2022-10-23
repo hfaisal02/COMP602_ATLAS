@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/BaseScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/PlayerNameTest.unity
-    guid: 58284a6e13b26ff46bf2fa235102ee2c
-  - enabled: 0
-    path: Assets/Scenes/TownTest.unity
-    guid: f0fcf652f9e403444be8f1aa7bfab08e
-  - enabled: 0
-    path: Assets/Scenes/RoomTest.unity
-    guid: b32c01b66910b984fafc7671dfef5101
-  - enabled: 1
     path: Assets/Scenes/Revamp/test_level_1.unity
     guid: bcee71973d5ee7341b93cf28ca30a4a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Revamp/test_level_2.unity
     guid: f6dac0c7901103b4b9ad8adac6a8caa4
+  - enabled: 1
+    path: Assets/Scenes/Stages/stage_forest.unity
+    guid: 77d4beb289811714b82e558b9563edc3
+  - enabled: 1
+    path: Assets/Scenes/Stages/stage_desert.unity
+    guid: 67466c1d2bbd87f4ab12354ccc303565
+  - enabled: 1
+    path: Assets/Scenes/Stages/stage_tundra.unity
+    guid: 001cc1d822876ed4c87097646c9e03d8
+  - enabled: 1
+    path: Assets/Scenes/Stages/stage_olympus.unity
+    guid: 3b52037849b57da4796056e346190337
   m_configObjects: {}

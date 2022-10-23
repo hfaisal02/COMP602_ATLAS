@@ -3,10 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class Teleporter : MonoBehaviour, Interactable
 {
-    public string sceneName;
+    private StageHandler stageHandler;
+
+    public void Start()
+    {
+        stageHandler = GetComponent<StageHandler>();
+    }
 
     public void Interact()
     {
-        SceneManager.LoadScene(sceneName);
+        stageHandler.LoadNextStage();
     }
 }

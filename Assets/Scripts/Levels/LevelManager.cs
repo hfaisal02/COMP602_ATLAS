@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    private GameManager gameManager;
     private float levelTimer;
     private bool startTimer;    
     public float survivalTimer;
-    public string nextLevel;
+
     public GameObject teleporter;
     public Transform[] teleporterLocations;
     private bool active;
 
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         active = true;
         startTimer = true;
+
+        survivalTimer *= gameManager.currentStage;
     }
 
     void Update()
@@ -36,7 +41,6 @@ public class LevelManager : MonoBehaviour
     {
         int rand = Random.Range(0, teleporterLocations.Length);
         Teleporter obj = Instantiate(teleporter, teleporterLocations[rand]).GetComponent<Teleporter>();
-        obj.sceneName = nextLevel;        
         active = false;
     }
 }

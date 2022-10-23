@@ -8,7 +8,7 @@ public class UIGameplay : MonoBehaviour
 
     void Awake()
     {
-        gameManager = GetComponent<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
     
     void Update()

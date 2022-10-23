@@ -10,7 +10,8 @@ public class UIPauseMenu : MonoBehaviour
 
     void Start()
     {
-        timer = GetComponent<Timer>();
+
+        timer = FindObjectOfType<Timer>();
     }
 
     void Update()
