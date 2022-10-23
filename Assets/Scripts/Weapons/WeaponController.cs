@@ -20,9 +20,12 @@ public class WeaponController : MonoBehaviour
     
     void Update()
     {
-        GetMouseInput();
-        WeaponAnimation();
-        ShootProjectile();
+        if(!PlayerData.menuActive)
+        {
+            GetMouseInput();
+            WeaponAnimation();
+            ShootProjectile();
+        }
     }
 
     void GetMouseInput()

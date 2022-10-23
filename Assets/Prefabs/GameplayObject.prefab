@@ -1597,7 +1597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450357380320828962}
   - component: {fileID: 1450357380320828965}
-  - component: {fileID: 1450357380320828964}
+  - component: {fileID: 4237295498534372164}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -1673,7 +1673,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1450357380320828964
+--- !u!114 &4237295498534372164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1682,10 +1682,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450357380320828963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a5eef90a174604448114836b724811c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe988fc85b6213429a8da9e801314fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 11400000, guid: a35062d4da6ad2b42bdc1b915988c1fb, type: 2}
   aim: {fileID: 1450357380611005565}
+  tip: {fileID: 637431551036005340}
 --- !u!1 &1450357380404418549
 GameObject:
   m_ObjectHideFlags: 0
