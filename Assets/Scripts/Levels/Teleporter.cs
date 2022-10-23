@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Teleporter : MonoBehaviour, Interactable
 {
     private StageHandler stageHandler;
+    private bool interacted = false;
 
     public void Start()
     {
@@ -12,6 +13,10 @@ public class Teleporter : MonoBehaviour, Interactable
 
     public void Interact()
     {
-        stageHandler.LoadNextStage();
+        if(!interacted)
+        {
+            stageHandler.LoadNextStage();
+            interacted = true;
+        }
     }
 }
