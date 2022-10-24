@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Revamp/test_level_1.unity
+    path: Assets/Scenes/test_level_1.unity
     guid: bcee71973d5ee7341b93cf28ca30a4a7
   - enabled: 0
-    path: Assets/Scenes/Revamp/test_level_2.unity
+    path: Assets/Scenes/test_level_2.unity
     guid: f6dac0c7901103b4b9ad8adac6a8caa4
   - enabled: 1
     path: Assets/Scenes/Stages/stage_forest.unity

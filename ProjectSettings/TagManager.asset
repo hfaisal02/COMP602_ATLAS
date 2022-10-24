@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Projectile
   - UIManager
+  - PlayerTransform
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - Water
   - UI
   - Obstacle
-  - 
-  - 
-  - 
+  - Player
+  - Projectile
+  - Enemy
   - 
   - 
   - 

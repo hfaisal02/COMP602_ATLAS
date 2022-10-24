@@ -1,36 +1,32 @@
+using Pathfinding;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public float moveSpeed;
+    [HideInInspector] public AIDestinationSetter ds;
+    [HideInInspector] public AIPath ap;
 
-    Rigidbody2D rb;
-    Transform target;
-    Vector2 moveDir;
+    public float playerDist;
+    [HideInInspector] public bool active;
 
-    private void Awake()
+    void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        ds = GetComponent<AIDestinationSetter>();
+        ap = GetComponent<AIPath>();
     }
     
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        ds.target = GameObject.FindGameObjectWithTag("PlayerTransform").transform;
     }
     
     void Update()
     {
-        if(target)
-        {
-            moveDir = (target.position - transform.position).normalized;
-        }
-    }
+        float dist = Vector2.Distance(transform.position, ds.target.position);
 
-    void FixedUpdate()
-    {
-        if(target)
+        if (dist <= playerDist)
         {
-            rb.velocity = new Vector2(moveDir.x, moveDir.y) * moveSpeed * Time.deltaTime;
+            active = true;
         }
     }
 }
