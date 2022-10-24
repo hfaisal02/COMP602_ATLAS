@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Shoots fireballs at a target location. May burn enemies.
   damage: 1
   fireRate: 0.25
-  deviation: 0.2
+  deviation: 0.1
   bulletPrefab: {fileID: 4028473919101998030, guid: 0735cf8ce41f79941b28b0a212e6a741, type: 3}
   semiAuto: 0
   sprite: {fileID: 21300000, guid: 265cb5ae88da45f45936a53814bec5ca, type: 3}

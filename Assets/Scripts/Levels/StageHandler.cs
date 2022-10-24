@@ -17,8 +17,11 @@ public class StageHandler : MonoBehaviour
 
     public void LoadNextStage()
     {
-        int rand = Random.Range(0, gameManager.stagesList.Count);
+        if (gameManager.stagesList.Count <= 0)
+            return;
 
+        int rand = Random.Range(0, gameManager.stagesList.Count);
+        
         SceneManager.LoadScene(gameManager.stagesList[rand]);
         gameManager.stagesList.RemoveAt(rand);
         
