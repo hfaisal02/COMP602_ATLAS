@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45cea14b2ae3b854aae74c50b70dfd62, type: 3}
-  m_Name: Fireballs
+  m_Name: Axe
   m_EditorClassIdentifier: 
-  weaponName: Fireball
-  description: 'Shoots fireballs at a target location. '
-  damage: 1
-  fireRate: 0.25
-  deviation: 0.1
-  bulletPrefab: {fileID: 4028473919101998030, guid: 0735cf8ce41f79941b28b0a212e6a741, type: 3}
+  weaponName: 
+  description: 
+  damage: 0
+  fireRate: 0
+  deviation: 0
+  bulletPrefab: {fileID: 4028473919101998030, guid: 30d523c2cd08b534598e234d25ef3de0, type: 3}
   semiAuto: 0
-  sprite: {fileID: 21300000, guid: 265cb5ae88da45f45936a53814bec5ca, type: 3}
-  scaleX: 0.25
-  scaleY: 0.5
+  sprite: {fileID: 0}
+  scaleX: 0
+  scaleY: 0

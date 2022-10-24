@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4791965904936615214}
   - component: {fileID: 5952816245194549184}
   m_Layer: 8
-  m_Name: ProjFireball
+  m_Name: ProjMelee
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ac1023717ec47f6458318d8eb644ea6f, type: 3}
-  m_Color: {r: 1, g: 0.29411766, b: 0, a: 1}
+  m_Color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,8 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417e8ba2c1bea614599e7b28f78b03bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1.5
-  moveSpeed: 20
+  lifeTime: 0.2
+  moveSpeed: 30
 --- !u!50 &5952816245194549184
 Rigidbody2D:
   serializedVersion: 4

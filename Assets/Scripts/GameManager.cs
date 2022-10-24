@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     [Header("Stages")]
     //[HideInInspector]
     public List<string> stagesList = new List<string>();
+    public string bossStage;
 
     private void Start()
     {

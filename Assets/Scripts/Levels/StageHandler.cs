@@ -17,8 +17,13 @@ public class StageHandler : MonoBehaviour
 
     public void LoadNextStage()
     {
+        OnStageChanged?.Invoke();
+
         if (gameManager.stagesList.Count <= 0)
+        {
+            SceneManager.LoadScene(gameManager.bossStage);
             return;
+        }
 
         int rand = Random.Range(0, gameManager.stagesList.Count);
         
@@ -26,7 +31,5 @@ public class StageHandler : MonoBehaviour
         gameManager.stagesList.RemoveAt(rand);
         
         Debug.Log(gameManager.stagesList);
-
-        OnStageChanged?.Invoke();
     }
 }

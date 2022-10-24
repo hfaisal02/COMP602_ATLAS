@@ -10,6 +10,7 @@ TagManager:
   - Projectile
   - UIManager
   - PlayerTransform
+  - Gameplay
   layers:
   - Default
   - TransparentFX
@@ -61,4 +62,10 @@ TagManager:
     locked: 0
   - name: Cursor
     uniqueID: 3995966567
+    locked: 0
+  - name: Cover
+    uniqueID: 2428132009
+    locked: 0
+  - name: Top
+    uniqueID: 3326345385
     locked: 0

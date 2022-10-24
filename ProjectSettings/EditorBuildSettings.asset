@@ -12,15 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/test_level_2.unity
     guid: f6dac0c7901103b4b9ad8adac6a8caa4
   - enabled: 1
-    path: Assets/Scenes/Stages/stage_forest.unity
+    path: Assets/Scenes/Menus/Main Menu.unity
+    guid: a2778af4e557220499e3af7e275790eb
+  - enabled: 1
+    path: Assets/Scenes/Stages/Mystic Forest.unity
     guid: 77d4beb289811714b82e558b9563edc3
   - enabled: 1
-    path: Assets/Scenes/Stages/stage_desert.unity
+    path: Assets/Scenes/Stages/Extreme Desert.unity
     guid: 67466c1d2bbd87f4ab12354ccc303565
   - enabled: 1
-    path: Assets/Scenes/Stages/stage_tundra.unity
+    path: Assets/Scenes/Stages/Frozen Tundra.unity
     guid: 001cc1d822876ed4c87097646c9e03d8
   - enabled: 1
-    path: Assets/Scenes/Stages/stage_olympus.unity
+    path: Assets/Scenes/Stages/Olympus Ruins.unity
     guid: 3b52037849b57da4796056e346190337
+  - enabled: 1
+    path: Assets/Scenes/Stages/The Labyrinth.unity
+    guid: 6d6201d5a34c69746956c4da3d55d0a2
   m_configObjects: {}

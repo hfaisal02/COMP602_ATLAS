@@ -13,7 +13,12 @@ public class IntroAnim : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-        text.text = "Stage " + gameManager.currentStage + "\n" + SceneManager.GetActiveScene().name;
+
+        if(gameManager.currentStage == 5)
+            text.text = "Final Stage\n" + SceneManager.GetActiveScene().name;
+        else
+            text.text = "Stage " + gameManager.currentStage + "\n" + SceneManager.GetActiveScene().name;
+
         Destroy(text.transform.parent.gameObject, 3);
     }
 }

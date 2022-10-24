@@ -7,16 +7,17 @@ public class UIPauseMenu : MonoBehaviour
     public GameObject gameCanvas;
     private Timer timer;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI stageText;
 
     void Start()
     {
-
         timer = FindObjectOfType<Timer>();
     }
 
     void Update()
     {
         timerText.text = timer.TimePlayed();
+        stageText.text = SceneManager.GetActiveScene().name;
     }
 
     public void Pause()
