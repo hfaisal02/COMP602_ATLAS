@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 315495763}
   m_Layer: 0
   m_Name: LevelManager
-  m_TagString: Untagged
+  m_TagString: LevelManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,10 +717,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582c0325aefbe634398ee5d1c698d728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTimer: 0
   survivalTimer: 1
   teleporter: {fileID: 6530228483006825368, guid: c2a3dc7e79cbb8c4083c850dab930c16, type: 3}
   teleporterLocations:
   - {fileID: 315495762}
+  active: 0
 --- !u!4 &315495762
 Transform:
   m_ObjectHideFlags: 0

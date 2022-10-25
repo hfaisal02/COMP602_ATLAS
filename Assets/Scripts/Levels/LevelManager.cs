@@ -5,13 +5,13 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     private GameManager gameManager;
-    private float levelTimer;
+    [HideInInspector] public float levelTimer;
     private bool startTimer;    
     public float survivalTimer;
 
     public GameObject teleporter;
     public Transform[] teleporterLocations;
-    private bool active;
+    [HideInInspector] public bool active;
 
     void Start()
     {
@@ -42,5 +42,25 @@ public class LevelManager : MonoBehaviour
         int rand = Random.Range(0, teleporterLocations.Length);
         Teleporter obj = Instantiate(teleporter, teleporterLocations[rand]).GetComponent<Teleporter>();
         active = false;
+    }
+
+    public string LevelTimerConverted()
+    {
+        int seconds = (int)(levelTimer % 60);
+        int minutes = (int)(levelTimer / 60) % 60;
+
+        string displayTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+
+        return displayTime;
+    }
+
+    public string SurvivalTimerConverted()
+    {
+        int seconds = (int)(survivalTimer % 60);
+        int minutes = (int)(survivalTimer / 60) % 60;
+
+        string displayTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+
+        return displayTime;
     }
 }

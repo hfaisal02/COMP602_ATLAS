@@ -1,18 +1,28 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class UIGameplay : MonoBehaviour
 {
-    public TextMeshProUGUI currencyText;
-    private GameManager gameManager;
+    private GameManager gm;
+    private Weapon weapon;
 
-    void Awake()
+    public TextMeshProUGUI currencyText;
+    public TextMeshProUGUI weaponText;
+
+    public Slider healthBar;
+
+    void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gm = FindObjectOfType<GameManager>();
+        weapon = FindObjectOfType<WeaponController>().weapon;
     }
     
     void Update()
     {
-        currencyText.text = "Gold: " + gameManager.currency;
+        currencyText.text = "[Gold] " + gm.currency;
+        weaponText.text = "[" + weapon.name + "]";
+
+        healthBar.value = (float) gm.health / gm.maxHealth;
     }
 }
