@@ -19,4 +19,10 @@ public class Weapon : ScriptableObject
     [Header("Sprite")]
     public Sprite sprite;
     public float scaleX, scaleY;
+
+
+    public string toString()
+    {
+        return "[Weapon Stats] Name: " + weaponName + ", Damage: " + damage + ", Fire Rate: " + fireRate + ", Deviation: " + deviation;
+    }
 }
