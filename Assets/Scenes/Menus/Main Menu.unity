@@ -3066,6 +3066,7 @@ GameObject:
   - component: {fileID: 1663716038}
   - component: {fileID: 1663716041}
   - component: {fileID: 1663716040}
+  - component: {fileID: 1663716042}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -3135,6 +3136,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3a95cf6fa72684a9822a87d3786543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1663716042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663716032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2726c05e6637e43b18a55b64e07760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Player Hit
+    clip: {fileID: 8300000, guid: 3147c44c3e34e254994175ef1853cb8a, type: 3}
+    volume: 0.2
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  mixer: {fileID: 24300002, guid: c33d2b4e516908e4087c30f345179378, type: 2}
 --- !u!1 &1696684505
 GameObject:
   m_ObjectHideFlags: 0

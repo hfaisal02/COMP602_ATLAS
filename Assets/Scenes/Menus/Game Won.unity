@@ -657,7 +657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME WON!!
+  m_text: YOU WIN!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5372fb81b2bf48645bba66946012e427, type: 2}
   m_sharedMaterial: {fileID: -8740456970334524333, guid: 5372fb81b2bf48645bba66946012e427, type: 2}
@@ -764,6 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsObject: {fileID: 0}
+  playerNameObject: {fileID: 0}
 --- !u!4 &1623634492
 Transform:
   m_ObjectHideFlags: 0

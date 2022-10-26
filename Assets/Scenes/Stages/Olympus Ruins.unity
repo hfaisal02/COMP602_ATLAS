@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29532010}
   - component: {fileID: 29532011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37013434}
   - component: {fileID: 37013435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81076604}
   - component: {fileID: 81076605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111506542}
   - component: {fileID: 111506543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117774909}
   - component: {fileID: 117774910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 148669061}
   - component: {fileID: 148669062}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165498826}
   - component: {fileID: 165498827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 206387618}
   - component: {fileID: 206387617}
   - component: {fileID: 206387619}
+  - component: {fileID: 206387620}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: LevelManager
@@ -627,6 +628,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1406484635}
+--- !u!114 &206387620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206387616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1581a93512019754799be032bc0b5e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chest: {fileID: 4601548755788692555, guid: c311ecb730a56554ebac1f6de27a37df, type: 3}
+  chestLocations:
+  - {fileID: 207964863}
+  - {fileID: 1398991787}
+  - {fileID: 863328902}
+  - {fileID: 636435572}
+  - {fileID: 2122595228}
+  - {fileID: 2058573970}
+--- !u!1 &207964862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 207964863}
+  m_Layer: 0
+  m_Name: Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &207964863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207964862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.44, y: 26.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222172591
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222172592}
   - component: {fileID: 222172593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 241020537}
   - component: {fileID: 241020538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 285479031}
   - component: {fileID: 285479032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 285702734}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -865,7 +917,7 @@ Transform:
   - {fileID: 1845609906}
   - {fileID: 397950897}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320777050
 GameObject:
@@ -877,7 +929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320777051}
   - component: {fileID: 320777052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332355543}
   - component: {fileID: 332355544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,7 +1045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360642879}
   - component: {fileID: 360642880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360927319}
   - component: {fileID: 360927320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397950897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399729679}
   - component: {fileID: 399729680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405675390}
   - component: {fileID: 405675391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 413205399}
   - component: {fileID: 413205400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414692795}
   - component: {fileID: 414692796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1496,7 +1548,7 @@ GameObject:
   - component: {fileID: 433432135}
   - component: {fileID: 433432137}
   - component: {fileID: 433432136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree  type 2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1593,7 +1645,7 @@ Transform:
   - {fileID: 57443133}
   - {fileID: 274736130}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454355697
 GameObject:
@@ -1606,7 +1658,7 @@ GameObject:
   - component: {fileID: 454355698}
   - component: {fileID: 454355700}
   - component: {fileID: 454355699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1733,7 @@ GameObject:
   - component: {fileID: 465394399}
   - component: {fileID: 465394401}
   - component: {fileID: 465394400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1755,7 +1807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482821955}
   - component: {fileID: 482821956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529143779}
   - component: {fileID: 529143780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1870,7 +1922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 534863805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1936,7 +1988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536228380}
   - component: {fileID: 536228381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1993,7 +2045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 545130504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2058,7 +2110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 568213626}
   - component: {fileID: 568213627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2187,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592347318
 GameObject:
@@ -2148,7 +2200,7 @@ GameObject:
   - component: {fileID: 592347319}
   - component: {fileID: 592347321}
   - component: {fileID: 592347320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610785248}
   - component: {fileID: 610785249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 621558312}
   - component: {fileID: 621558313}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2328,6 +2380,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.8453846, y: 3.7702198}
   m_EdgeRadius: 0
+--- !u!1 &636435571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636435572}
+  m_Layer: 0
+  m_Name: Pos (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &636435572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636435571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.08, y: -9.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647009679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 647009680}
   - component: {fileID: 647009681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2396,7 +2479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 648289466}
   - component: {fileID: 648289467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2454,7 +2537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675990514}
   - component: {fileID: 675990515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,7 +2595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679871911}
   - component: {fileID: 679871912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2570,7 +2653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 681638164}
   - component: {fileID: 681638165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683340036}
   - component: {fileID: 683340037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2686,7 +2769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683835290}
   - component: {fileID: 683835291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2744,7 +2827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703695244}
   - component: {fileID: 703695245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2802,7 +2885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730168875}
   - component: {fileID: 730168876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2860,7 +2943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761523265}
   - component: {fileID: 761523266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2918,7 +3001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762564238}
   - component: {fileID: 762564239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3007,7 +3090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826882876}
   - component: {fileID: 826882877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3065,7 +3148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 858816432}
   - component: {fileID: 858816433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3123,7 +3206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 859598820}
   - component: {fileID: 859598821}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3171,6 +3254,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.0196056, y: 2.300623}
   m_EdgeRadius: 0
+--- !u!1 &863328901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863328902}
+  m_Layer: 0
+  m_Name: Pos (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &863328902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863328901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.46, y: 21.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863921367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,7 +3295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863921368}
   - component: {fileID: 863921369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3239,7 +3353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 874282509}
   - component: {fileID: 874282510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,7 +3483,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &896823709
 GameObject:
@@ -3381,7 +3495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 896823710}
   - component: {fileID: 896823711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,7 +3553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921094668}
   - component: {fileID: 921094669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3497,7 +3611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932042586}
   - component: {fileID: 932042587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3639,7 +3753,7 @@ RectTransform:
   m_Children:
   - {fileID: 1406484633}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3657,7 +3771,7 @@ GameObject:
   - component: {fileID: 951832635}
   - component: {fileID: 951832637}
   - component: {fileID: 951832636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3731,7 +3845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1010731136}
   - component: {fileID: 1010731137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3789,7 +3903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1019921917}
   - component: {fileID: 1019921918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3847,7 +3961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020883625}
   - component: {fileID: 1020883626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3905,7 +4019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038813791}
   - component: {fileID: 1038813792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3963,7 +4077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158260900}
   - component: {fileID: 1158260901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4021,7 +4135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181793889}
   - component: {fileID: 1181793890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4079,7 +4193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212156483}
   - component: {fileID: 1212156484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4156,7 +4270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259736685
 GameObject:
@@ -4168,7 +4282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259736686}
   - component: {fileID: 1259736687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4226,7 +4340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263633564}
   - component: {fileID: 1263633565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4396,7 +4510,7 @@ GameObject:
   - component: {fileID: 1321848571}
   - component: {fileID: 1321848573}
   - component: {fileID: 1321848572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree  type 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4460,6 +4574,93 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72105455, y: 2.4744205}
   m_EdgeRadius: 0
+--- !u!1 &1329658146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329658148}
+  - component: {fileID: 1329658147}
+  m_Layer: 0
+  m_Name: PathFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1329658147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329658146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAABoIexI7yoscAIAACcFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoUxJkDorSWE9JCECe3k4ouQ1liDLHkkOUAy/PeuZBm71BfEe/vx9mntLyKUrYA5bdZG8GfNgXwfEH8m3wYd+QQnutdqKz6hjXkX3BU+iIaYN+qERnzs06wuwRnBfqi99MEJgrUSuTbliu9hqa2zCOdUWkDKaOezFUJfA3LCn+HCp5zxlM796RNPi2RwwSMD5cD0QsejxWyBz2QcU4bJaDpN8EmnMbXJrBWTtKyA+zG6Avf3MW/WhCkcMEb4ikxLKWxUR9y5CtNvqwIM+PG5oDhsUDQezX3HAsS+cF57P/01zy24aIah5wdh0LamLvmpGy9Lag+Nsg8qa99pdhdENTWf/6OH40DnRpdPbdtx4lu4QrDDGz0zal3P6z780JMe/DlSeaA7Ce8FqBe9NrpWHElnap9aW0gfur/XyZYFsEOHN1JvwLrqDG+vtr1YP8MlDH9aSlHuPDW6a4Ct1MHwsA9g8Gp+oeCwLTaWQNSr+GPhN9331yoSj8JYh1ScUnl5O10bH0pWwTM/Te2W2igIcBRdgaLSnTdYxt3e4A3Xa3vDPFL/AsXmkWvfi5uUAHfxSXJDbfTxelm20MdnsMVr7aRQ0In2xAv6tNRKNQvW96RN29Ymp6yXtq8F/3e1CM2nO5ZOOEvvEzaZT4d8MkkXOb+bz5PpLElTEnZPKJyTyk0jNNqDt6a64gr3rP2uDNaGVmHZuaHHtfgsdc9yoXK9ZQZAvTYVrsLBYBN8LfmKCzRoC84JFe6bfGVEanYAnl0LZWHS1ckZmnVVMlKJD+08kpFl+JBkxMPXXd4Y+BBw9M3bYhdy+QtQSwMEFAAACAgAAGgh7DrBqyVtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJimmlSspFxSrKRhUGysbmpboqxsZFlWoqJubmBqZmBkZFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAGgh7EjvKixwAgAAJwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAGgh7DrBqyVtAAAAeAAAAAkAJAAAAAAAAAAAAAAAvQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB1AwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 150
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 10
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &1329658148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329658146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351423790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4470,7 +4671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1351423791}
   - component: {fileID: 1351423792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4528,7 +4729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360956509}
   - component: {fileID: 1360956510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4576,6 +4777,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9242249, y: 4.0225844}
   m_EdgeRadius: 0
+--- !u!1 &1398991786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398991787}
+  m_Layer: 0
+  m_Name: Pos (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1398991787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398991786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7, y: 26.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406484632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,7 +4999,7 @@ Transform:
   - {fileID: 390794287}
   - {fileID: 1290361706}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440121809
 GameObject:
@@ -4780,7 +5012,7 @@ GameObject:
   - component: {fileID: 1440121810}
   - component: {fileID: 1440121812}
   - component: {fileID: 1440121811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4855,7 +5087,7 @@ GameObject:
   - component: {fileID: 1441278345}
   - component: {fileID: 1441278347}
   - component: {fileID: 1441278346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree  type 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4929,7 +5161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448511837}
   - component: {fileID: 1448511838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4987,7 +5219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494647234}
   - component: {fileID: 1494647235}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5045,7 +5277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514318694}
   - component: {fileID: 1514318695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5103,7 +5335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529377971}
   - component: {fileID: 1529377972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5161,7 +5393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530964981}
   - component: {fileID: 1530964982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5219,7 +5451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570560583}
   - component: {fileID: 1570560584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5277,7 +5509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581968601}
   - component: {fileID: 1581968602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5335,7 +5567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1586842299}
   - component: {fileID: 1586842300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5393,7 +5625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590591798}
   - component: {fileID: 1590591799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5451,7 +5683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1601818713}
   - component: {fileID: 1601818714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5509,7 +5741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621665696}
   - component: {fileID: 1621665697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5567,7 +5799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630166160}
   - component: {fileID: 1630166161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5626,7 +5858,7 @@ GameObject:
   - component: {fileID: 1631278208}
   - component: {fileID: 1631278210}
   - component: {fileID: 1631278209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5700,7 +5932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708172524}
   - component: {fileID: 1708172525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +6010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1720492966
 MonoBehaviour:
@@ -5914,7 +6146,7 @@ GameObject:
   - component: {fileID: 1750035004}
   - component: {fileID: 1750035006}
   - component: {fileID: 1750035005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree  type 2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5988,7 +6220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777025100}
   - component: {fileID: 1777025101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6046,7 +6278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797012266}
   - component: {fileID: 1797012267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6104,7 +6336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813664857}
   - component: {fileID: 1813664858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6161,7 +6393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1845609906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collisions New
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6205,7 +6437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887811499}
   - component: {fileID: 1887811500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6264,7 +6496,7 @@ GameObject:
   - component: {fileID: 1916204721}
   - component: {fileID: 1916204723}
   - component: {fileID: 1916204722}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6338,7 +6570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1933165886}
   - component: {fileID: 1933165887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6396,7 +6628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1938812886}
   - component: {fileID: 1938812887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6454,7 +6686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979934119}
   - component: {fileID: 1979934120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6513,7 +6745,7 @@ GameObject:
   - component: {fileID: 1991291652}
   - component: {fileID: 1991291654}
   - component: {fileID: 1991291653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6606,7 +6838,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043289176
 GameObject:
@@ -6638,6 +6870,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 433732311}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2058573969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058573970}
+  m_Layer: 0
+  m_Name: Pos (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058573970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058573969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.35, y: -0.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070344004
 GameObject:
@@ -6760,7 +7023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084269451}
   - component: {fileID: 2084269452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6808,6 +7071,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.773626, y: 3.6165695}
   m_EdgeRadius: 0
+--- !u!1 &2084390437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084390438}
+  m_Layer: 0
+  m_Name: ChestSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2084390438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084390437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 207964863}
+  - {fileID: 1398991787}
+  - {fileID: 863328902}
+  - {fileID: 636435572}
+  - {fileID: 2122595228}
+  - {fileID: 2058573970}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094026701
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,7 +7118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094026702}
   - component: {fileID: 2094026703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6876,7 +7176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2108587884}
   - component: {fileID: 2108587885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upper Floor (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6924,6 +7224,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.007431, y: 2.4480438}
   m_EdgeRadius: 0
+--- !u!1 &2122595227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122595228}
+  m_Layer: 0
+  m_Name: Pos (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2122595228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122595227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.01, y: -24.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2084390438}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2125661704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,7 +7265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125661705}
   - component: {fileID: 2125661706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree Collision (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6992,7 +7323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129754973}
   - component: {fileID: 2129754974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prop Collision (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
