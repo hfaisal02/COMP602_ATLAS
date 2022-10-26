@@ -50,7 +50,7 @@ public class PlayerBehaviour : MonoBehaviour
         if(canTakeDamage)
         {
             OnHealthChanged?.Invoke(amount);
-
+            
             safetyTimer = startSafetyTimer;
             canTakeDamage = false;
         }

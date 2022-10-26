@@ -17,6 +17,8 @@ public class LevelManager : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
 
+        gameManager.health = gameManager.maxHealth;
+
         active = true;
         startTimer = true;
 
@@ -39,6 +41,7 @@ public class LevelManager : MonoBehaviour
 
     void SpawnTeleporter()
     {
+        FindObjectOfType<AudioManager>().PlayOneShot("Teleporter");
         int rand = Random.Range(0, teleporterLocations.Length);
         Teleporter obj = Instantiate(teleporter, teleporterLocations[rand]).GetComponent<Teleporter>();
         active = false;

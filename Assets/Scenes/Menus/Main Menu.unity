@@ -1412,7 +1412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &518805041
 GameObject:
@@ -2654,7 +2654,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434046426
 GameObject:
@@ -2837,7 +2837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1505629406
 MonoBehaviour:
@@ -2971,7 +2971,7 @@ RectTransform:
   - {fileID: 333896272}
   - {fileID: 1745458492}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3066,7 +3066,6 @@ GameObject:
   - component: {fileID: 1663716038}
   - component: {fileID: 1663716041}
   - component: {fileID: 1663716040}
-  - component: {fileID: 1663716042}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -3136,26 +3135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3a95cf6fa72684a9822a87d3786543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1663716042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663716032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2726c05e6637e43b18a55b64e07760, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Player Hit
-    clip: {fileID: 8300000, guid: 3147c44c3e34e254994175ef1853cb8a, type: 3}
-    volume: 0.2
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  mixer: {fileID: 24300002, guid: c33d2b4e516908e4087c30f345179378, type: 2}
 --- !u!1 &1696684505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,6 +3463,117 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790311939}
   m_CullTransparentMesh: 1
+--- !u!1 &1817217016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817217018}
+  - component: {fileID: 1817217017}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1817217017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817217016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2726c05e6637e43b18a55b64e07760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 338eff1222264a14a8629dcea3357faf, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Player Hit
+    clip: {fileID: 8300000, guid: 3147c44c3e34e254994175ef1853cb8a, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Item Pickup
+    clip: {fileID: 8300000, guid: a590a5f655b7f3044922b1ad07da2eb4, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Select
+    clip: {fileID: 8300000, guid: ba97b583de5c0ff4c8787050112aa362, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Stone
+    clip: {fileID: 8300000, guid: 588941e880659c440aa1fcb42145f7ab, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Blizzard
+    clip: {fileID: 8300000, guid: f04352cbfdf90704c8f84c78253ddc8b, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Player Hit 2
+    clip: {fileID: 8300000, guid: 06568485e7974c04eb84f781acbdbae3, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Explode
+    clip: {fileID: 8300000, guid: 39219b1495288994a9fc9ae95a295bfb, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Teleporter
+    clip: {fileID: 8300000, guid: 0e93b8cbd6b1eb943a805aa10d51b46a, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Unlock
+    clip: {fileID: 8300000, guid: f8e44a015e258a743b6ff341d24ecefd, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Added Item
+    clip: {fileID: 8300000, guid: 69a5df6347c18c34aac2c3efc4c673be, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &1817217018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817217016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2027434247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,7 +3646,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2027434252
 MonoBehaviour:

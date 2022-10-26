@@ -8,7 +8,9 @@ public class ButtonBehaviour : MonoBehaviour
 
     public void UseButton(int index)
     {
-        switch(index)
+        PlayButtonSound();
+
+        switch (index)
         {
             case 0: //start game
                 GetComponent<StageHandler>().LoadNextStage();
@@ -33,5 +35,10 @@ public class ButtonBehaviour : MonoBehaviour
                     playerNameObject.SetActive(true);
                 break;
         }
+    }
+
+    public void PlayButtonSound()
+    {
+        FindObjectOfType<AudioManager>().PlayOneShot("Stone");
     }
 }

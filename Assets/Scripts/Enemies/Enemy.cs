@@ -33,6 +33,8 @@ public class Enemy : MonoBehaviour
 
         if(health <= 0)
         {
+            FindObjectOfType<AudioManager>().PlayOneShot("Explode");
+
             ed.DropLoot();
             Destroy(gameObject);
         }

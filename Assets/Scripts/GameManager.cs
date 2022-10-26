@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
     public int currentStage;
 
     [Header("Stages")]
-    //[HideInInspector]
     public List<string> stagesList = new List<string>();
     public string bossStage;
 
@@ -56,6 +55,8 @@ public class GameManager : MonoBehaviour
 
     void AddCurrency(int amount)
     {
+        FindObjectOfType<AudioManager>().PlayOneShot("Select");
+
         currency += amount;
         Debug.Log(currency);
     }
@@ -68,6 +69,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdateHealth(int amount)
     {
+        FindObjectOfType<AudioManager>().PlayOneShot("Player Hit");
+
         health -= amount;
 
         if(health <= 0)

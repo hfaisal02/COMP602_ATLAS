@@ -44,6 +44,8 @@ public class Inventory : MonoBehaviour
             Debug.Log("Added " + item.itemName + " for the first time!");
             OnInventoryChange?.Invoke(inventory);
         }
+
+        FindObjectOfType<AudioManager>().PlayOneShot("Added Item");
     }
 
     public void Remove(Item item)
