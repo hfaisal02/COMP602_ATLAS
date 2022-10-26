@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 25
+  force: 50
   items:
   - {fileID: 7081630399763719340, guid: e329c842b6795e747bc2da0c9e684ad7, type: 3}
   - {fileID: 5249957367969341415, guid: 0354b793db32270488d80fa5c9fb3507, type: 3}

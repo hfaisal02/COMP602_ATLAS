@@ -12,6 +12,7 @@ public class Interactor : MonoBehaviour
         if (interactable != null && inRange && InputManager.interactInput)
         {
             interactable.Interact();
+            InputManager.interactInput = false;
         }
     }
 

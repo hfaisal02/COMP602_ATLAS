@@ -7,6 +7,7 @@ public class Chest : MonoBehaviour, Interactable
 {
     GameManager gm;
     public float price;
+    //public float force;
     public GameObject[] items;
     public TextMeshProUGUI priceText;
 
@@ -21,11 +22,15 @@ public class Chest : MonoBehaviour, Interactable
     {
         if(gm.currency >= price)
         {
+            FindObjectOfType<AudioManager>().PlayOneShot("Unlock");
+
             gm.currency -= (int)price;
 
             int rand = Random.Range(0, items.Length);
-            FindObjectOfType<AudioManager>().PlayOneShot("Unlock");
-            Instantiate(items[rand], transform.position, Quaternion.identity);
+            GameObject obj = Instantiate(items[rand], transform.position, Quaternion.identity);
+            Vector2 dir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+
+            //obj.GetComponent<Rigidbody2D>().AddForce(dir * force, ForceMode2D.Impulse);
             Destroy(gameObject);
         }        
     }
