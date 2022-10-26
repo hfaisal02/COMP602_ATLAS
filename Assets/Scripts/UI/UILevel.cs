@@ -14,6 +14,11 @@ public class UILevel : MonoBehaviour
     public TextMeshProUGUI surviveText;
     public TextMeshProUGUI goalText;
 
+    void OnEnable()
+    {
+        BossBehaviour.OnBossDefeated += BossDefeated;    
+    }
+
     void Start()
     {
         gm = FindObjectOfType<GameManager>();

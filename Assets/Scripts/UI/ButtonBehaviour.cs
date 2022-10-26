@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class ButtonBehaviour : MonoBehaviour
 {
     public GameObject creditsObject;
+    public GameObject playerNameObject;
 
     public void UseButton(int index)
     {
@@ -26,6 +27,10 @@ public class ButtonBehaviour : MonoBehaviour
                 break;
             case 4: //main menu
                 SceneManager.LoadScene("Main Menu");
+                break;
+            case 5: //player name prompt
+                if (playerNameObject)
+                    playerNameObject.SetActive(true);
                 break;
         }
     }

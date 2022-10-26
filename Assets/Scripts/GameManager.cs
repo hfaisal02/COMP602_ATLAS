@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerBehaviour.OnHealthChanged += UpdateHealth;
         StageHandler.OnStageChanged += OnStageChanged;
+        BossBehaviour.OnBossDefeated += CompleteGame;
         Currency.OnCurrencyCollected += AddCurrency;
     }
 
@@ -74,7 +75,13 @@ public class GameManager : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("Gameplay"));
             Destroy(gameObject);
             SceneManager.LoadScene("Game Over");
-            Debug.Log("game over");
         }
+    }
+
+    public void CompleteGame()
+    {
+        Destroy(GameObject.FindGameObjectWithTag("Gameplay"));
+        Destroy(gameObject);
+        SceneManager.LoadScene("Game Won");
     }
 }
