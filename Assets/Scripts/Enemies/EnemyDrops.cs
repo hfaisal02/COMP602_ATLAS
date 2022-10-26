@@ -8,7 +8,7 @@ public class EnemyDrops : MonoBehaviour
     public int minAmount, maxAmount;
     public float maxX, maxY;
 
-    private void OnDestroy()
+    public void DropLoot()
     {
         float amount = Random.Range(minAmount, maxAmount);
 

@@ -10,10 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8579849765061543316}
   - component: {fileID: 1877161150490122884}
-  - component: {fileID: 1370033366255667784}
-  - component: {fileID: -2801791136410348215}
-  - component: {fileID: 6100994238416503450}
-  - component: {fileID: -6375633757749845675}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -77,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1029946965
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06fe22c0fc759a54b84936164ccff36f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5a43f4f462226c4e8e6589e3c14e47d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,55 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1370033366255667784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530228483006825368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1576fac5d25cd941b293e1e893d6526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-2801791136410348215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530228483006825368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6fadbe5395b7bf41a2a2cc57cb7b987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!58 &6100994238416503450
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530228483006825368}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.895
---- !u!114 &-6375633757749845675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530228483006825368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726232b28ba666d44813f21e282da0bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
