@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45cea14b2ae3b854aae74c50b70dfd62, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  weaponName: 
-  description: 
-  damage: 0
-  fireRate: 0
-  deviation: 0
+  weaponName: Throwing Axe
+  description: Hurls a powerful axe at the target direction, not always accurately.
+  damage: 2
+  fireRate: 0.8
+  deviation: 0.35
   bulletPrefab: {fileID: 4028473919101998030, guid: 30d523c2cd08b534598e234d25ef3de0, type: 3}
   semiAuto: 0
   sprite: {fileID: 0}

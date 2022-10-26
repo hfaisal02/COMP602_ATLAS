@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45cea14b2ae3b854aae74c50b70dfd62, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  weaponName: 
-  description: 
-  damage: 0
-  fireRate: 0
+  weaponName: Bow&Arrow
+  description: Fires a percise but powerful arrow at the target direction.
+  damage: 2
+  fireRate: 1
   deviation: 0
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 4028473919101998030, guid: 79c33c7885e004b40a5f71bf0ebe5e50, type: 3}
   semiAuto: 0
   sprite: {fileID: 0}
   scaleX: 0

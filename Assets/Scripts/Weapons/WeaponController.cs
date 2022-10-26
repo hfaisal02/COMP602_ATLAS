@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class WeaponController : MonoBehaviour
 {
+    GameManager gm;
+
     public Weapon weapon;
     public Transform aim, tip;
 
@@ -13,7 +15,12 @@ public class WeaponController : MonoBehaviour
     
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         playerInput = FindObjectOfType<PlayerInput>();
+
+        if(gm.chosenWeapon)
+            weapon = gm.chosenWeapon;
+
         startCooldown = weapon.fireRate;
         cooldown = 0;
     }

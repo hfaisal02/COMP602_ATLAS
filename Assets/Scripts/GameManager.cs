@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public int health;
     public int maxHealth;
 
+    public Weapon chosenWeapon;
+
     public int currency;
     [HideInInspector]
     public int currentStage;
