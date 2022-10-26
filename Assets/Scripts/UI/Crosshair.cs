@@ -14,19 +14,27 @@ public class Crosshair : MonoBehaviour
 
     public float scale;
 
+    private void OnDestroy()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+
         player = GameObject.FindGameObjectWithTag("Player");
         playerInput = FindObjectOfType<PlayerInput>();
 
         sprite = GetComponent<SpriteRenderer>();
         opacity = sprite.color;
-        Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()
     {
         Cursor.visible = false;
+
         mousePos = playerInput.actions["Aim"].ReadValue<Vector2>();        
 
         if(playerInput.currentControlScheme == "Gamepad")

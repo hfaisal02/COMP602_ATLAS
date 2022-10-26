@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     private float health;
     public float maxHealth;
 
+    public int damage;
+
     void Start()
     {
         health = maxHealth;

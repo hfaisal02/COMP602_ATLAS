@@ -5,6 +5,8 @@ using Pathfinding;
 
 public class EnemyRanged : MonoBehaviour
 {
+    Enemy enemy;
+
     AIDestinationSetter ds;
     AIPath ap;
 
@@ -13,10 +15,14 @@ public class EnemyRanged : MonoBehaviour
 
     private float cooldown;
     public float startCooldown;
-    //public GameObject projectile;
+
+    public GameObject projectile;
+    //Transform playerPos;
 
     void Awake()
     {
+        enemy = GetComponent<Enemy>();
+
         ds = GetComponent<AIDestinationSetter>();
         ap = GetComponent<AIPath>();
         
@@ -24,6 +30,7 @@ public class EnemyRanged : MonoBehaviour
 
     void Start()
     {
+        //playerPos = GameObject.FindGameObjectWithTag("PlayerTransform").transform;
         ds.target = GameObject.FindGameObjectWithTag("PlayerTransform").transform;
         playerDist = ap.slowdownDistance;
         cooldown = 0;
@@ -42,8 +49,11 @@ public class EnemyRanged : MonoBehaviour
         {
             if(cooldown <= 0)
             {
-                //shoot projectile
-                Debug.Log("shoot projectile");
+                Vector3 projDir = (ds.target.position - transform.position).normalized;
+
+                var proj = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<EnemyProjectile>();
+                proj.Setup(projDir, enemy.damage);
+
                 cooldown = startCooldown;
             }
             else

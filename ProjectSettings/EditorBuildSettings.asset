@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/The Labyrinth.unity
     guid: 6d6201d5a34c69746956c4da3d55d0a2
+  - enabled: 1
+    path: Assets/Scenes/Menus/Game Over.unity
+    guid: 175e1a9d35949cd4d83d636f23dcaac9
   m_configObjects: {}

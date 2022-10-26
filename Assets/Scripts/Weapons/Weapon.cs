@@ -9,7 +9,7 @@ public class Weapon : ScriptableObject
     public string description;
 
     [Header("Stats")]
-    public float damage;
+    public int damage;
     public float fireRate;
     public float deviation;
     

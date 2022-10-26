@@ -5,8 +5,15 @@ public class UIPlayer : MonoBehaviour
 {
     GameManager gm;
 
+    public Animator anim;
+
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI healthText;
+
+    void Awake()
+    {
+        PlayerBehaviour.OnHealthChanged += PlayHealthFlash;
+    }
 
     void Start()
     {
@@ -17,5 +24,10 @@ public class UIPlayer : MonoBehaviour
     {
         nameText.text = "[" + PlayerData.playerName + "]";
         healthText.text = gm.health + " / " + gm.maxHealth;
+    }
+
+    void PlayHealthFlash(int amount)
+    {
+        anim.SetTrigger("Damage Taken");
     }
 }

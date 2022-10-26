@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
+        PlayerBehaviour.OnHealthChanged += UpdateHealth;
         StageHandler.OnStageChanged += OnStageChanged;
         Currency.OnCurrencyCollected += AddCurrency;
     }
@@ -61,5 +63,18 @@ public class GameManager : MonoBehaviour
     {
         currentStage += 1;
         Debug.Log("GM" + currentStage);
+    }
+
+    public void UpdateHealth(int amount)
+    {
+        health -= amount;
+
+        if(health <= 0)
+        {
+            Destroy(GameObject.FindGameObjectWithTag("Gameplay"));
+            Destroy(gameObject);
+            SceneManager.LoadScene("Game Over");
+            Debug.Log("game over");
+        }
     }
 }

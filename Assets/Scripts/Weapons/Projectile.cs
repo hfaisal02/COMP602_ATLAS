@@ -6,12 +6,12 @@ using UnityEngine.InputSystem;
 public class Projectile : MonoBehaviour
 {
     private Vector3 dir;
-    private float damage;
+    private int damage;
 
     public float lifeTime;
     public float moveSpeed;
 
-    public void Setup(Vector3 dir, float damage)
+    public void Setup(Vector3 dir, int damage)
     {
         this.dir = dir;
         this.damage = damage;
